@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'TFTransparentNavigationBar_Example', :exclusive => true do
+  pod "TFTransparentNavigationBar", :path => "../"
+end
+
+target 'TFTransparentNavigationBar_Tests', :exclusive => true do
+  pod "TFTransparentNavigationBar", :path => "../"
+
+  
+end
