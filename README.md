@@ -9,9 +9,16 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Project is in Alpha stage.
 
 ## Requirements
+
+iOS 8 and later, Swift 2.0
+
+## Known bugs
+
+- Navigation bar keeps title during pop transition
+- First transition to controller with transparent navbar moves with fromView frame
 
 ## Installation
 
