@@ -1,0 +1,6 @@
+framework module TFTransparentNavigationBar {
+  umbrella header "TFTransparentNavigationBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

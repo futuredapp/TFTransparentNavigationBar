@@ -1,0 +1,14 @@
+PODS:
+  - TFTransparentNavigationBar (0.1.0)
+
+DEPENDENCIES:
+  - TFTransparentNavigationBar (from `../`)
+
+EXTERNAL SOURCES:
+  TFTransparentNavigationBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TFTransparentNavigationBar: 588ad9048324fd9a00cc5e332c5fb046d1919629
+
+COCOAPODS: 0.38.2
