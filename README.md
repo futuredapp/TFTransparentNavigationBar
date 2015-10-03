@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/TFTransparentNavigationBar.svg?style=flat)](http://cocoapods.org/pods/TFTransparentNavigationBar)
 [![Platform](https://img.shields.io/cocoapods/p/TFTransparentNavigationBar.svg?style=flat)](http://cocoapods.org/pods/TFTransparentNavigationBar)
 
+![preview](https://github.com/thefuntasty/TFTransparentNavigationBar/blob/master/Example/TFTransparentNavigationBar/preview.gif)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
