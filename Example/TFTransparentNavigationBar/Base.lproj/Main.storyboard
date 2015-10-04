@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Hello-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TFTransparentNavigationBar_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                             <constraint firstItem="iJQ-Gj-buN" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="D7h-j2-BV4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mmI-N1-nDB"/>
+                    <navigationItem key="navigationItem" title="Hello" id="mmI-N1-nDB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

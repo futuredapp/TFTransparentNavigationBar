@@ -11,7 +11,7 @@ import UIKit
 class TFBackwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.5
+        return 0.33
     }
     
     func removeAnimationsForViews(views: [UIView]) {

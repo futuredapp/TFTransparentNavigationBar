@@ -11,7 +11,7 @@ import UIKit
 class TFForwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.5
+        return 0.33
     }
     
     func animateTransition(context: UIViewControllerContextTransitioning) {
@@ -30,7 +30,7 @@ class TFForwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTransi
         containerView.insertSubview(toView, aboveSubview: fromView)
         
         // Insert fromView snapshot above fromView
-        self.navigationController.view.insertSubview(fromViewSnapshot, aboveSubview: fromView)
+        containerView.insertSubview(fromViewSnapshot, belowSubview: toView)
         
         // hide fromView and use snapshot instead
         fromView.hidden = true
@@ -53,7 +53,7 @@ class TFForwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTransi
         let toViewFinalFrame: CGRect = CGRectOffset(toView.frame, -toView.frame.width, 0)
         
         // Calculate final frame for fromView and fromViewSnapshot
-        let fromViewFinalFrame = CGRectOffset(navigationControllerFrame, -navigationControllerFrame.width, 0)
+        let fromViewFinalFrame = CGRectOffset(navigationControllerFrame, -(navigationControllerFrame.width * 0.3), 0)
         
         // Save origin navigation bar frame
         let navigationBarFrame = self.navigationController.navigationBar.frame
