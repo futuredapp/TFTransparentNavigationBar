@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1FBB3896E8D5E12A126DFC6B66493B20 /* TFTransparentNavigationBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A25A420BB7D1E5D05AE634286BE2D6B /* TFTransparentNavigationBar-dummy.m */; };
-		3B5CD685F964E9261142EF792AD79D76 /* TFBackAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A266717DE16F904452BC2933BFF8B93 /* TFBackAnimator.swift */; };
+		3B5CD685F964E9261142EF792AD79D76 /* TFBackwardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A266717DE16F904452BC2933BFF8B93 /* TFBackwardAnimator.swift */; };
 		5D3C9D66AE3FA2B379FCCADD8D86A3D8 /* CGRect+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E20DFA3E39D2EF7199B4806AFA04DF /* CGRect+Tools.swift */; };
 		67B02592C0E772499D4A5B57C41C366A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DE063C34AFA44FF7131CFA1D4B778A /* Foundation.framework */; };
 		7001E01F186C4D98D7FF383796EDD034 /* TFTransparentNavigationBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 313465F48DFC7A2C9F1663E6C35747BD /* TFTransparentNavigationBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,7 +56,7 @@
 		2754E876E3A93BC099461A01AFA15929 /* Pods-TFTransparentNavigationBar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFTransparentNavigationBar_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2C2455BEB71F34DCB91093FD3E7A5312 /* Pods-TFTransparentNavigationBar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFTransparentNavigationBar_Example-umbrella.h"; sourceTree = "<group>"; };
 		313465F48DFC7A2C9F1663E6C35747BD /* TFTransparentNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFTransparentNavigationBar-umbrella.h"; sourceTree = "<group>"; };
-		3A266717DE16F904452BC2933BFF8B93 /* TFBackAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TFBackAnimator.swift; sourceTree = "<group>"; };
+		3A266717DE16F904452BC2933BFF8B93 /* TFBackwardAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TFBackwardAnimator.swift; sourceTree = "<group>"; };
 		52C9678144C6202F3B1C1BD3F22FCE92 /* Pods_TFTransparentNavigationBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFTransparentNavigationBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		592AF2DE67A21C0F33DB237A939FF3C5 /* Pods-TFTransparentNavigationBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFTransparentNavigationBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		624BFF6C25F8325E5FD35A4EF3BADC18 /* Pods-TFTransparentNavigationBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFTransparentNavigationBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				72E20DFA3E39D2EF7199B4806AFA04DF /* CGRect+Tools.swift */,
-				3A266717DE16F904452BC2933BFF8B93 /* TFBackAnimator.swift */,
+				3A266717DE16F904452BC2933BFF8B93 /* TFBackwardAnimator.swift */,
 				23D0CE02C5DF6E705743DC4207A5E119 /* TFForwardAnimator.swift */,
 				CBDF5371A102A538089DF839D336F11B /* TFNavigationBarAnimator.swift */,
 				D9050ABB4814F3407C4266113AE55BDC /* TFNavigationController.swift */,
@@ -418,7 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D3C9D66AE3FA2B379FCCADD8D86A3D8 /* CGRect+Tools.swift in Sources */,
-				3B5CD685F964E9261142EF792AD79D76 /* TFBackAnimator.swift in Sources */,
+				3B5CD685F964E9261142EF792AD79D76 /* TFBackwardAnimator.swift in Sources */,
 				A6C3A7E0F4F68EF89719F2C5EF975AA9 /* TFForwardAnimator.swift in Sources */,
 				8F2F8F9089A6BBB2C62FF0AB541DECD6 /* TFNavigationBarAnimator.swift in Sources */,
 				D16571599CA5535B8C27DAB2FF7591D9 /* TFNavigationController.swift in Sources */,
