@@ -130,7 +130,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bw1-qT-4A8" customClass="TFNavigationController" customModule="TFTransparentNavigationBar" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9qp-qk-TAX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9qp-qk-TAX" customClass="TFNavigationBar" customModule="TFTransparentNavigationBar">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>

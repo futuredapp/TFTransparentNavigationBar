@@ -33,6 +33,8 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
         let left = UIScreenEdgePanGestureRecognizer(target: self, action: "handleSwipeFromLeft:")
         left.edges = .Left
         self.view.addGestureRecognizer(left);
+
+        
     }
     
     func handleSwipeFromLeft(gesture: UIScreenEdgePanGestureRecognizer) {
@@ -56,6 +58,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
             interactionController = nil
         }
     }
+    
     
     // MARK: - UIViewControllerTransitioningDelegate
 

@@ -16,6 +16,7 @@
 		8C4B93B23DD57A80C5D9BB926C68206B /* Pods-TFTransparentNavigationBar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D69868473D4D65B641114F3DCA543544 /* Pods-TFTransparentNavigationBar_Tests-dummy.m */; };
 		8F2F8F9089A6BBB2C62FF0AB541DECD6 /* TFNavigationBarAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF5371A102A538089DF839D336F11B /* TFNavigationBarAnimator.swift */; };
 		8FD31DEE5F7390EBDD5C9B7ED2590C7D /* Pods-TFTransparentNavigationBar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD0FF4A5BA4ADD8C63FB3F9E68CB1F6 /* Pods-TFTransparentNavigationBar_Example-dummy.m */; };
+		90CEB0FA1BC169430065CBEB /* TFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CEB0F91BC169430065CBEB /* TFNavigationBar.swift */; settings = {ASSET_TAGS = (); }; };
 		92E26EFBCCF77EC0B3B838D8A63CC4B7 /* Pods-TFTransparentNavigationBar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2754E876E3A93BC099461A01AFA15929 /* Pods-TFTransparentNavigationBar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6C3A7E0F4F68EF89719F2C5EF975AA9 /* TFForwardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D0CE02C5DF6E705743DC4207A5E119 /* TFForwardAnimator.swift */; };
 		D16571599CA5535B8C27DAB2FF7591D9 /* TFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9050ABB4814F3407C4266113AE55BDC /* TFNavigationController.swift */; };
@@ -65,6 +66,7 @@
 		72E20DFA3E39D2EF7199B4806AFA04DF /* CGRect+Tools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Tools.swift"; sourceTree = "<group>"; };
 		83241C571851DA25B7EBD43FD58580FD /* TFTransparentNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TFTransparentNavigationBar.modulemap; sourceTree = "<group>"; };
 		8F852F2E85489E395B913B98E4C59FF1 /* TFTransparentNavigationBar-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TFTransparentNavigationBar-Private.xcconfig"; sourceTree = "<group>"; };
+		90CEB0F91BC169430065CBEB /* TFNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFNavigationBar.swift; sourceTree = "<group>"; };
 		9F45B9C434AF1222320178CCD08170B1 /* Pods-TFTransparentNavigationBar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFTransparentNavigationBar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A4F7D01EF653D7C1339CDEC3157B36A3 /* TFTransparentNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFTransparentNavigationBar-prefix.pch"; sourceTree = "<group>"; };
 		AA2031B247E996996D971A6EE21D4532 /* TFTransparentNavigationBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFTransparentNavigationBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 				23D0CE02C5DF6E705743DC4207A5E119 /* TFForwardAnimator.swift */,
 				CBDF5371A102A538089DF839D336F11B /* TFNavigationBarAnimator.swift */,
 				D9050ABB4814F3407C4266113AE55BDC /* TFNavigationController.swift */,
+				90CEB0F91BC169430065CBEB /* TFNavigationBar.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				8F2F8F9089A6BBB2C62FF0AB541DECD6 /* TFNavigationBarAnimator.swift in Sources */,
 				D16571599CA5535B8C27DAB2FF7591D9 /* TFNavigationController.swift in Sources */,
 				1FBB3896E8D5E12A126DFC6B66493B20 /* TFTransparentNavigationBar-dummy.m in Sources */,
+				90CEB0FA1BC169430065CBEB /* TFNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

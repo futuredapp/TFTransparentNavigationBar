@@ -14,6 +14,13 @@ class TFBackwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTrans
         return 0.5
     }
     
+    func removeAnimationsForViews(views: [UIView]) {
+        for view in views {
+            view.layer.removeAllAnimations()
+            removeAnimationsForViews(view.subviews)
+        }
+    }
+    
     func animateTransition(context: UIViewControllerContextTransitioning) {
         
         let containerView = context.containerView()!
