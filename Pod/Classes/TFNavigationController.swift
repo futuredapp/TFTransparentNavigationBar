@@ -16,7 +16,7 @@ import UIKit
     func navigationControllerBarPushStyle() -> TFNavigationBarStyle
 }
 
-public class TFNavigationController: UINavigationController, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
+public class TFNavigationController: UINavigationController, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate, UINavigationBarDelegate {
     
     private var interactionController: UIPercentDrivenInteractiveTransition?
     private var temporaryBackgroundImage: UIImage?
@@ -29,11 +29,12 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
 
         transitioningDelegate = self   // for presenting the original navigation controller
         delegate = self                // for navigation controller custom transitions
+        interactivePopGestureRecognizer?.delegate = nil
         
         let left = UIScreenEdgePanGestureRecognizer(target: self, action: "handleSwipeFromLeft:")
         left.edges = .Left
         self.view.addGestureRecognizer(left);
-
+        
         
     }
     
@@ -42,6 +43,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
         
         if gesture.state == .Began {
             interactionController = UIPercentDrivenInteractiveTransition()
+            
             if viewControllers.count > 1 {
                 popViewControllerAnimated(true)
             } else {
@@ -50,6 +52,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
         } else if gesture.state == .Changed {
             interactionController?.updateInteractiveTransition(percent)
         } else if gesture.state == .Ended {
+            
             if percent > 0.5 {
                 interactionController?.finishInteractiveTransition()
             } else {
@@ -131,7 +134,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
             styleTransition = .toTransparent
         }
         
-        return TFForwardAnimator(navigationController: self, navigationBarStyleTransition: styleTransition)
+        return TFForwardAnimator(navigationController: self, navigationBarStyleTransition: styleTransition, isInteractive: interactionController != nil)
     }
     
     func backwardAnimator(fromViewController: UIViewController, toViewController: UIViewController) -> TFBackwardAnimator? {
@@ -157,7 +160,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
             styleTransition = .toSolid
         }
         
-        return TFBackwardAnimator(navigationController: self, navigationBarStyleTransition: styleTransition)
+        return TFBackwardAnimator(navigationController: self, navigationBarStyleTransition: styleTransition, isInteractive: interactionController != nil)
     }
     
     
@@ -176,5 +179,6 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
             self.navigationBar.setBackgroundImage(temporaryBackgroundImage, forBarMetrics: UIBarMetrics.Default)
         }
     }
+    
 }
 

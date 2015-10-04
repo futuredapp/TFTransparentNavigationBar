@@ -27,10 +27,12 @@ class TFNavigationBarAnimator: NSObject {
     let navigationController: TFNavigationController
     
     let navigationBarStyleTransition: TFNavigationBarStyleTransition
+    let isInteractive: Bool
     
-    init(navigationController: TFNavigationController, navigationBarStyleTransition: TFNavigationBarStyleTransition) {
+    init(navigationController: TFNavigationController, navigationBarStyleTransition: TFNavigationBarStyleTransition, isInteractive: Bool = false) {
         self.navigationController = navigationController
         self.navigationBarStyleTransition = navigationBarStyleTransition
+        self.isInteractive = isInteractive
     }
     
     

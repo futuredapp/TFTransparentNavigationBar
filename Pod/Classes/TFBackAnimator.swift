@@ -69,7 +69,18 @@ class TFBackwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTrans
         // Shift bar
         self.navigationController.navigationBar.frame = CGRectOffset(navigationBarFrame, -navigationBarFrame.width, 0)
         
+        if self.isInteractive {
+//            let navbar = UINavigationBar(frame: navigationBarFrame)
+//            self.navigationController.view.insertSubview(navbar, aboveSubview: toView)
+//            
+//            if let items = self.navigationController.navigationBar.items {
+//                navbar.setItems([items[items.count-2]], animated: false)
+//            }
+        }
+        
         UIView.animateWithDuration(duration, delay: 0.0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> Void in
+            
+            
             // Shift fromView to the right
             fromViewSnapshot.frame = fromViewFinalFrame
             // Shift fromView to the right
@@ -77,8 +88,14 @@ class TFBackwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTrans
             
             self.navigationController.navigationBar.frame = navigationBarFrame
             
+            if self.isInteractive {
+                self.navigationController.navigationBar.alpha = 1.0
+            }
+            
             }, completion: { (completed) -> Void in
                 fromViewSnapshot.removeFromSuperview()
+                
+                self.navigationController.navigationBar.alpha = 1.0
                 
                 if context.transitionWasCancelled() {
                     
