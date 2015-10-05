@@ -32,6 +32,9 @@ class TFBackwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTrans
 
         let fromFrame = context.initialFrameForViewController(fromViewController)
         
+        // Disable user interaction
+        toView.userInteractionEnabled = false
+        
         // Create snapshot from navigation controller content
         let fromViewSnapshot = fromViewController.navigationController!.view.snapshotViewAfterScreenUpdates(false)
         
@@ -78,7 +81,7 @@ class TFBackwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTrans
 //            }
         }
         
-        UIView.animateWithDuration(duration, delay: 0.0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> Void in
+        UIView.animateWithDuration(duration, delay: 0.0, options: [.CurveEaseOut], animations: { () -> Void in
             
             
             // Shift fromView to the right
@@ -93,6 +96,9 @@ class TFBackwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTrans
             }
             
             }, completion: { (completed) -> Void in
+                // Enable user interaction
+                toView.userInteractionEnabled = true
+                // Remove snapshot
                 fromViewSnapshot.removeFromSuperview()
                 
                 self.navigationController.navigationBar.alpha = 1.0

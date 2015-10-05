@@ -61,7 +61,7 @@ class TFForwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTransi
         self.navigationController.navigationBar.frame = CGRectOffset(navigationBarFrame, navigationBarFrame.width, 0)
         
         
-        UIView.animateWithDuration(duration, delay: 0.0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> Void in
+        UIView.animateWithDuration(duration, delay: 0.0, options: [.CurveEaseOut], animations: { () -> Void in
             
             // Shift toView to the left
             toView.frame = toViewFinalFrame

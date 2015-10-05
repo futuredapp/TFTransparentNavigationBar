@@ -29,7 +29,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
 
         transitioningDelegate = self   // for presenting the original navigation controller
         delegate = self                // for navigation controller custom transitions
-        interactivePopGestureRecognizer?.delegate = nil
+        //interactivePopGestureRecognizer?.delegate = nil
         
         let left = UIScreenEdgePanGestureRecognizer(target: self, action: "handleSwipeFromLeft:")
         left.edges = .Left
@@ -51,7 +51,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
             }
         } else if gesture.state == .Changed {
             interactionController?.updateInteractiveTransition(percent)
-        } else if gesture.state == .Ended {
+        } else if gesture.state == .Ended || gesture.state == .Cancelled || gesture.state == .Failed {
             
             if percent > 0.5 {
                 interactionController?.finishInteractiveTransition()
