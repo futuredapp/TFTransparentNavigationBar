@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                        Custom transition between controllers in UINavigationController that makes navigation bar transparent on specified controllers
+                        Custom transition between controllers in UINavigationController that makes navigation bar transparent on specified controllers. It solves problem with making navigation bar translucent on one controller and non-translucent on another and vice versa.
                        DESC
 
   s.homepage         = "https://github.com/thefuntasty/TFTransparentNavigationBar"

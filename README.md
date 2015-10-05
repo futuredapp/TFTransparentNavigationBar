@@ -17,7 +17,7 @@ iOS 8 and later, Swift 2.0
 
 ## Known bugs
 
-- ~~Navigation bar keeps title during pop transition~~ FIXED (but still problem with interactive transition)
+- ~~Navigation bar keeps title during pop transition FIXED (but still problem with interactive transition)~~
 - ~~First transition to controller with transparent navbar moves with fromView frame~~
 
 ## Installation
