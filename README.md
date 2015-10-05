@@ -13,7 +13,7 @@ In order to make transparent navigation bar you need set your navigation control
 
 ## Requirements
 
-iOS 8 and later, Swift 2.0
+iOS 8 and later, Swift 2.0. No Apple-private API used.
 
 ## Known bugs
 
