@@ -20,6 +20,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
     
     private var interactionController: UIPercentDrivenInteractiveTransition?
     private var temporaryBackgroundImage: UIImage?
+    var navigationBarSnapshots: Dictionary<Int, UIView> = Dictionary()
     
     override public func viewDidLoad() {
         super.viewDidLoad()

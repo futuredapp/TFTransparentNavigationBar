@@ -35,6 +35,4 @@ class TFNavigationBarAnimator: NSObject {
         self.isInteractive = isInteractive
     }
     
-    
-    
 }

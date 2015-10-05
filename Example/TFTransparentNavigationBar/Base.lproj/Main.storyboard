@@ -28,7 +28,7 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.2941176593" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="iJQ-Gj-buN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="6Bj-TJ-QaN"/>
                             <constraint firstItem="iJQ-Gj-buN" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="D7h-j2-BV4"/>
@@ -115,7 +115,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.41568627450000001" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Im back" id="FIF-6B-5g8"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -130,7 +130,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bw1-qT-4A8" customClass="TFNavigationController" customModule="TFTransparentNavigationBar" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9qp-qk-TAX" customClass="TFNavigationBar" customModule="TFTransparentNavigationBar">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9qp-qk-TAX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>

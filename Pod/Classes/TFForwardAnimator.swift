@@ -26,6 +26,14 @@ class TFForwardAnimator: TFNavigationBarAnimator, UIViewControllerAnimatedTransi
         // Create snapshot from navigation controller content
         let fromViewSnapshot = fromViewController.navigationController!.view.snapshotViewAfterScreenUpdates(false)
         
+        // Create snapshot of navigation bar
+        let navbarSnapshot = navigationController.navigationBar.resizableSnapshotViewFromRect(navigationController.navigationBar.bounds.additiveRect(20, direction: .Top), afterScreenUpdates: false, withCapInsets: UIEdgeInsetsMake(0, 0, 0, 0))
+        
+        // Save snapshot of navigation bar for pop animation
+        if let index = self.navigationController.viewControllers.indexOf(fromViewController) {
+            navigationController.navigationBarSnapshots[index] = navbarSnapshot
+        }
+        
         // Insert toView above from view
         containerView.insertSubview(toView, aboveSubview: fromView)
         
