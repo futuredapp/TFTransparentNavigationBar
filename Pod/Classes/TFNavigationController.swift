@@ -128,7 +128,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
         if fromStyle == .Solid && toStyle == .Solid {
             return nil
         } else if (fromStyle == .Transparent && toStyle == .Transparent) {
-            styleTransition = .toSame
+            return nil
         } else if fromStyle == .Transparent && toStyle == .Solid {
             styleTransition = .toSolid
         } else if fromStyle == .Solid && toStyle == .Transparent {
@@ -153,8 +153,10 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
         }
         var styleTransition: TFNavigationBarStyleTransition!
         
-        if fromStyle == toStyle {
-            styleTransition = .toSame
+        if fromStyle == .Solid && toStyle == .Solid {
+            return nil
+        } else if (fromStyle == .Transparent && toStyle == .Transparent) {
+            return nil
         } else if fromStyle == .Solid && toStyle == .Transparent {
             styleTransition = .toTransparent
         } else if fromStyle == .Transparent && toStyle == .Solid {
