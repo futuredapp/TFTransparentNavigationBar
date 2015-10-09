@@ -125,9 +125,7 @@ public class TFNavigationController: UINavigationController, UIViewControllerTra
         
         var styleTransition: TFNavigationBarStyleTransition!
         
-        if fromStyle == .Solid && toStyle == .Solid {
-            return nil
-        } else if (fromStyle == .Transparent && toStyle == .Transparent) {
+        if fromStyle == toStyle {
             return nil
         } else if fromStyle == .Transparent && toStyle == .Solid {
             styleTransition = .toSolid
